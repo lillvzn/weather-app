@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMmeI4XZrpc5F2p8ro8gbtpfRiC7gntcY&libraries=places"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="header">
+        <div class="icon-container">
+          <canvas id="weather-icon" width="100" height="100"></canvas>
+        </div>
+      </section>
+      <section class="content">
+        <div class="general-info">
+          <div class="status" data-status>Enter Location</div>
+          <div class="location" data-loc>To find the weather</div>
+        </div>
+        <div class="detail-section">
+          <div class="detail">
+            <div class="title">Wind</div>
+            <div class="value" data-wind>TBD</div>
+          </div>
+          <div class="detail bordered">
+            <div class="title">Temperature</div>
+            <div class="value" data-temp>TBD</div>
+          </div>
+          <div class="detail">
+            <div class="title">Humidity</div>
+            <div class="value" data-humid>TBD</div>
+          </div>
+        </div>
+        <div class="city-search-container">
+          <input
+            type="text"
+            class="city-search"
+            data-loc-search
+            placeholder="Enter Location"
+          />
+        </div>
+      </section>
+    </div>
+    <a href="https://openweathermap.org/" class="weatherApp-logo"
+      >Credits: OpenWeather</a
+    >
+  </body>
+</html>
